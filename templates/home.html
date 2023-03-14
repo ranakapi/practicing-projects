@@ -1,12 +1,33 @@
-<!DOCHTML>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop One Click</title>
-</head>
-<body>
-  <h1>Shop One Click</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block body %}
+<!-- banner images slider -->
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/1.jpg" class="d-block w-100" alt="hoodie image">
+    </div>
+    <div class="carousel-item" active>
+      <img src="static/2.jpg" class="d-block w-100" alt="pants image">
+    </div>
+    <div class="carousel-item active">
+      <img src="static/3.jpg" class="d-block w-100" alt="shirts image">
+    </div>
+    <div class="carousel-item" active>
+      <img src="static/4.jpg" class="d-block w-100" alt="shirts image">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+{% endblock %}
+    
